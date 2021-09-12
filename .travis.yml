@@ -1,0 +1,7 @@
+language: ruby
+
+install:
+  - gem install ceedling
+
+script:
+  - ceedling
