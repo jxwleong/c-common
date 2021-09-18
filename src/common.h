@@ -8,6 +8,6 @@
 
 char decimalToChar(int decimal);
 char *getDecimalInBinaryStr(int decimal);
-
+char *strrev(char *str);
 
 #endif // COMMON_H

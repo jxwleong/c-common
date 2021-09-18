@@ -29,4 +29,9 @@ void test_getDecimalInBinaryStr_given_123_in_int_expect_return_1111011_STRING(vo
     TEST_ASSERT_EQUAL_STRING("1111011", getDecimalInBinaryStr(123));
 }
 
+void test_strrev_given_ab_expect_return_str_ba(void)
+{
+    TEST_ASSERT_EQUAL_STRING("dcba", strrev("abcd"));
+}
+
 #endif // TEST

@@ -29,3 +29,30 @@ char *getDecimalInBinaryStr(int decimal){
     return strrev(binaryStr);
 }
 
+char *strrev(char *str)
+{
+    if (!str || ! *str)
+        return str;
+
+    int i = strlen(str) - 1, j = 0;
+    char *temp= (char*) malloc(sizeof(str));
+    char ch;
+    while (i != 0)
+    {
+         //str[i] = str[j];
+        ch = str[i];
+        *temp++ = ch;
+        //str[j] = ch;
+        i--;
+        j++;
+    }
+    return &temp;
+}
+
+
+#define start main
+int start()
+{
+    printf(strrev("abcv"));
+    return 0;
+}
